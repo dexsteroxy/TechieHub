@@ -21,7 +21,7 @@ const Hero = () => {
         Welcome to TechieHub.org where you can learn any tech skills of your choice please click the button below to continue
       </p>
 
-    <Link href={"/login"} className=' z-20'>
+    <Link href={"/mainlogin"} className=' z-20'>
     <button className="inline-flex mt-16 z-20 h-10 animate-shimmer items-center justify-center rounded-md border border-blue-300 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-8 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
         Continue to TechieHub
       </button>
