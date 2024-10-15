@@ -12,6 +12,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { cn } from "../../../lib/utils";
 import akaza from '../../assets/ka.jpg'
+import StarsCanvas from "@/components/ui/StarBackground";
 
 export function page() {
   const links = [
@@ -24,21 +25,21 @@ export function page() {
     },
     {
       label: "Profile",
-      href: "#",
+      href: "/profile",
       icon: (
         <IconUserBolt className=" text-neutral-200 h-5 w-5 flex-shrink-0" />
       ),
     },
     {
       label: "Settings",
-      href: "#",
+      href: "/settings",
       icon: (
         <IconSettings className="text-neutral-200 h-5 w-5 flex-shrink-0" />
       ),
     },
     {
       label: "Logout",
-      href: "#",
+      href: "/logout",
       icon: (
         <IconArrowLeft className="text-neutral-200 h-5 w-5 flex-shrink-0" />
       ),
@@ -46,7 +47,9 @@ export function page() {
   ];
   const [open, setOpen] = useState(false);
   return (
-    <div
+   <div>
+    {/* <StarsCanvas /> */}
+     <div
       className={cn(
         "rounded-md flex flex-col md:flex-row bg-neutral-800 w-full flex-1 mx-auto border border-neutral-700 overflow-hidden",
         "h-screen" // for your use case, use `h-screen` instead of `h-[60vh]`
@@ -71,7 +74,7 @@ export function page() {
                 icon: (
                   <Image
                     src={akaza}
-                    className="h-7 w-7 flex-shrink-0 rounded-full"
+                    className="h-8 w-9 flex-shrink-0 rounded-full"
                     width={50}
                     height={50}
                     alt="Avatar"
@@ -84,6 +87,7 @@ export function page() {
       </Sidebar>
       <Dashboard />
     </div>
+   </div>
   );
 }
 

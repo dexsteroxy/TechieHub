@@ -91,15 +91,17 @@ const page = () => {
               />
             </LabelInputContainer>
 
-           <div className=" flex items-center justify-center">
-           <div className=" flex cursor-pointer items-center justify-center hover:shadow-sm  hover:shadow-blue-500 rounded-md hover:transition hover:duration-300 mx-auto -mt-4 mb-5 h-16 w-60 bg-zinc-800">
-<div>
-  <h3 className=" font-semibold text-purple underline cursor-pointer">Upload Photo</h3>
-</div>
+            <div className=" flex items-center justify-center">
+              <div className=" flex cursor-pointer items-center justify-center hover:shadow-sm  hover:shadow-blue-500 rounded-md hover:transition hover:duration-300 mx-auto -mt-4 mb-5 h-16 w-60 bg-zinc-800">
+                <div>
+                  <h3 className=" font-semibold text-purple underline cursor-pointer">
+                    Upload Photo
+                  </h3>
+                </div>
+              </div>
             </div>
-           </div>
 
-            <Link href={"/dashboard"}>
+            <Link href={"/mainlogin"}>
               <button
                 className="bg-gradient-to-br relative group/btn  from-zinc-900 to-zinc-900  block bg-zinc-800 w-full text-white rounded-md h-10 font-medium  shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
                 type="submit"
