@@ -20,7 +20,7 @@ const page = () => {
     <div className=" py-6 bg-black-100">
       {/* <StarsCanvas /> */}
       <div className=" bg-black-100 min-h-screen p-4 md:p-0">
-        <div className="max-w-md w-full md:shadow-md md:shadow-white-100 mx-auto rounded-none md:rounded-2xl p-5 shadow-input bg-black-100">
+        <div className="max-w-md w-full border-t border-white-100 shadow-md shadow-white-100 mx-auto rounded-2xl p-5 shadow-input bg-black-100">
           <h2 className="font-bold text-xl text-neutral-200">
             Welcome to <span className=" text-white-100">TechieHub</span>
           </h2>

@@ -6,6 +6,7 @@ import React from "react";
 import { cn } from "../../../lib/utils";
 import StarsCanvas from "@/components/ui/StarBackground";
 import Link from "next/link";
+import Footer from "@/components/Footer";
 
 const page = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -14,17 +15,20 @@ const page = () => {
   };
   return (
     <div>
-      <div className=" py-6 bg-black-100">
-        <div className=" bg-black-100 min-h-screen p-4 md:p-0">
-          <div className="max-w-md w-full md:shadow-md md:shadow-white-100 mx-auto rounded-none md:rounded-2xl p-5 shadow-input bg-black-100">
+       {/* <StarsCanvas /> */}
+      <div className="">
+
+        <div className=" bg-black-100 min-h-screen flex items-center flex-col justify-center p-4 md:p-0">
+         
+          <div className="max-w-md w-full shadow-md border-t border-white-100 shadow-white-100 mx-auto rounded-2xl p-5 shadow-input bg-black-100 z-50">
             <h2 className="font-bold text-xl text-neutral-200">
               Welcome to <span className=" text-white-100">TechieHub</span>
             </h2>
             
 
-            <form className="my-8" onSubmit={handleSubmit}>
+            <form className="my-8 z-50" onSubmit={handleSubmit}>
               <LabelInputContainer className="mb-4">
-                <Label htmlFor="email" className=" text-white font-semibold">
+                <Label htmlFor="email" className=" text-white z-50 font-semibold">
                   Email Address
                 </Label>
                 <Input
@@ -55,9 +59,9 @@ const page = () => {
                 </button>
               </Link>
 
-              <div className="bg-gradient-to-r from-transparent  via-neutral-700 to-transparent my-8 h-[1px] w-full" />
-              <p className=" text-sm max-w-sm mb-3 text-center -mt-2 text-neutral-300 capitalize">
-              Please if you don't have an account kindly <br/> <Link href={"/login"} className=" text-purple underline">create a new account</Link>
+              <div className="bg-gradient-to-r from-transparent z-50  via-neutral-700 to-transparent my-8 h-[1px] w-full" />
+              <p className=" z-50 text-sm max-w-sm mb-3 text-center -mt-2 text-neutral-300 capitalize">
+              Please if you don't have an account kindly <br/> <Link href={"/login"} className=" text-purple underline z-50 cursor-pointer">create a new account</Link>
             </p>
               <div className="flex flex-col space-y-4">
                 <button
@@ -71,7 +75,9 @@ const page = () => {
               </div>
             </form>
           </div>
+          
         </div>
+        <Footer/>
       </div>
     </div>
   );
