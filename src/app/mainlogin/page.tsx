@@ -90,7 +90,9 @@ const BottomGradient = () => {
       <span className="group-hover/btn:opacity-100 blur-sm block transition duration-500 opacity-0 absolute h-px w-1/2 mx-auto -bottom-px inset-x-10 bg-gradient-to-r from-transparent via-indigo-500 to-transparent" />
     </>
   );
+  
 };
+
 
 const LabelInputContainer = ({
   children,
